@@ -14,8 +14,8 @@ Make sure you have Docker installed on your machine.
 ## Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Naveenbhargav-Mallampati/sarvatask.git
+cd sarvatask
 ```
 
 ## Step 2: Run Redis Stack via Docker
