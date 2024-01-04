@@ -1,0 +1,35 @@
+version: '3'
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  raft1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+    hostname: raft1
+    ports:
+      - "9091:9091"
+  raft2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+      - raft1
+    hostname: raft2
+    ports:
+      - "9092:9092"
+  raft3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+      - raft1
+    hostname: raft3
+    ports:
+      - "9093:9093"
