@@ -1,4 +1,3 @@
-Certainly! Below is a sample `README.md` code for your task:
 
 ```markdown
 # Redis Stack Setup for Golang Projects
